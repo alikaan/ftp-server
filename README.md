@@ -51,3 +51,23 @@ To stop the running container, use the following command:
 
 ```sh
 docker stop ftp-server-instance
+```
+
+## Removing the Container
+
+To remove the stopped container, use the following command:
+
+```sh
+docker rm ftp-server-instance
+```
+
+## Additional Configuration
+
+- The FTP server configuration is defined in the [`vsftpd.conf`](vsftpd.conf) file. You can modify this file to change the server settings.
+- After making changes to the [`vsftpd.conf`](vsftpd.conf) file, rebuild the Docker image and restart the container to apply the changes.
+
+For more information on [`vsftpd`](https://security.appspot.com/vsftpd.html) configuration, refer to the official documentation.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
